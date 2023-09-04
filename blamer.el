@@ -532,7 +532,7 @@ avatar will be downloaded and included in the plist."
                             commit-message
                             blamer-max-commit-message-length nil nil "...")))
          (commit-description (cdr commit-messages))
-         (raw-commit-message (nth 1 commit-messages))
+         (raw-commit-message (nth 0 commit-messages))
          (avatar (when (and
                         blamer-show-avatar-p
                         include-avatar-p
